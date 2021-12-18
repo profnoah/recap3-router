@@ -15,7 +15,7 @@ const Instructors = () => {
 
   return (
     <div className="text-center">
-      <h1>OUR INSTRUCTOR</h1>
+      <h1>OUR INSTRUCTOR (This is just for learning :) )</h1>
       {users.map((user) => {
         const { id, login, avatar_url } = user;
         return (
