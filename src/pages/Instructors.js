@@ -1,6 +1,6 @@
 import React from "react";
 
-const Instructor = () => {
+const Instructors = () => {
   return (
     <div>
       <h1>INST</h1>
@@ -8,4 +8,4 @@ const Instructor = () => {
   );
 };
 
-export default Instructor;
+export default Instructors;

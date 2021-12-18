@@ -10,7 +10,9 @@ const MyNav = () => {
       <Navbar
         bg="light"
         expand="lg"
-        onSelect={(eventKey) => navigate(`/${eventKey}`)}
+        onSelect={(eventKey) =>
+          eventKey === "home" ? navigate("/") : navigate(`/${eventKey}`)
+        }
       >
         <Container>
           <Navbar.Brand>
@@ -22,13 +24,13 @@ const MyNav = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <NavDropdown title="Courses" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
+                <NavDropdown.Item eventKey="developing">
                   Full-Stack-Developing
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item eventKey="data-science">
                   Data-Science
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item eventKey="devops">
                   AWD-DEVOPS
                 </NavDropdown.Item>
               </NavDropdown>
