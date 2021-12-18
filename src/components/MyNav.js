@@ -1,30 +1,32 @@
 import React from "react";
 import { Nav, Container, Navbar, NavDropdown } from "react-bootstrap";
+import logo from "../img/logo.png";
 
 const MyNav = () => {
   return (
     <div>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <img src={logo} alt="" />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown title="Courses" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">
+                  Full-Stack-Developing
+                </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
-                  Another action
+                  Data-Science
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                  AWD-DEVOPS
                 </NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link href="#home">About</Nav.Link>
+              <Nav.Link href="#link">Instructors</Nav.Link>
+              <Nav.Link href="#contact">Instructors</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
