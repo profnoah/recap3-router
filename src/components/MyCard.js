@@ -1,8 +1,9 @@
-import React from "react";
 import { Card, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const MyCard = (props) => {
-  const { id, img, link, text, name } = props.course;
+  const navigate = useNavigate();
+  const { img, link, text, name } = props.course;
   return (
     <div>
       <Card style={{ width: "18rem" }}>
@@ -10,7 +11,13 @@ const MyCard = (props) => {
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>{text}</Card.Text>
-          <Button variant="primary">Details</Button>
+          <Button
+            variant="primary"
+            style={{ background: "#C400FF" }}
+            onClick={() => navigate(`/${link}`)}
+          >
+            Details
+          </Button>
         </Card.Body>
       </Card>
     </div>
