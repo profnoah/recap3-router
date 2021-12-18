@@ -15,7 +15,10 @@ const Instructors = () => {
 
   return (
     <div className="text-center">
-      <h1>OUR INSTRUCTOR (This is just to learn API :) it is not real :) )</h1>
+      <h1>OUR INSTRUCTOR</h1>
+      <h5 className="text-danger">
+        This is just to learn API. It is not real :)
+      </h5>
       {users.map((user) => {
         const { id, login, avatar_url } = user;
         return (
