@@ -12,7 +12,7 @@ const MyNav = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="ms-auto">
               <NavDropdown title="Courses" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
                   Full-Stack-Developing
@@ -26,7 +26,7 @@ const MyNav = () => {
               </NavDropdown>
               <Nav.Link href="#home">About</Nav.Link>
               <Nav.Link href="#link">Instructors</Nav.Link>
-              <Nav.Link href="#contact">Instructors</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
