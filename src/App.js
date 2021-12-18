@@ -1,14 +1,16 @@
 import MyNav from "./components/MyNav";
 import Slider from "./components/Slider";
 import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <MyNav />
-      <Slider />
-      <Home />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 export default App;
