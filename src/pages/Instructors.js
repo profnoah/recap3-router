@@ -25,7 +25,7 @@ const Instructors = () => {
             <img
               src={avatar_url}
               alt=""
-              width="300px"
+              style={{ cursor: "pointer", width: "300px" }}
               onClick={() => navigate(`/instructors/${user.login}`)}
             />
           </div>
